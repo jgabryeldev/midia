@@ -5,4 +5,10 @@ function toquePom ()
 
 const listaTeclasSom = document.querySelectorAll('.tecla');
 
-listaTeclasSom[0] = onclick = toquePom;
+let i =0;
+
+while(i<9)
+{
+    listaTeclasSom[i] = onclick = toquePom;
+    i++;
+}
