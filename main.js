@@ -9,9 +9,12 @@ let i =0;
 
 while(i<listaTeclasSom.length)
 {
-    listaTeclasSom[i] = onclick = function()
+    const tecla = listaTeclasSom[i];
+    const teclado = tecla.classList[1];
+    const idSom = `#som_${teclado}`;
+    listaTeclasSom[i].onclick = function()
     {
-        toque('#som_tecla_pom');
+        toque(idSom);
     }
     i++;
 }
